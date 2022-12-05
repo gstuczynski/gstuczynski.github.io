@@ -1,0 +1,4 @@
+#!/bin/bash
+SRC='http://localhost:3000/'; 
+DST='https://infopanels.sphericaltours.com/';
+find ./src -type f -name "*.js" -exec sed -i 's,'"$SRC"','"$DST"',' {} \;

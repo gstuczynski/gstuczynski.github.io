@@ -1,0 +1,5 @@
+{
+  "editor.defaultFormatter": "vscode.configuration-editing",
+  "javascript.format.enable": false,
+  "liveServer.settings.port": 5501
+}

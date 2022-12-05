@@ -1,0 +1,50 @@
+<html>
+
+<head>
+    <script type="module" src="interesting_facts_loader.js"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-159918622-7"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag("js", new Date());
+
+        gtag("config", "UA-159918622-7");
+    </script>
+    <title>Quiz - Morskie oko</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <meta name="viewport" content="minimal-ui, width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+</head>
+
+<body>
+    <div id="fb-root"></div>
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/pl_PL/sdk.js#xfbml=1&version=v7.0&appId=578366499694140&autoLogAppEvents=1"></script>
+    <div class="buttons-container">
+        <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/geotraf" class="option-button open-fb"></a>
+        <div class="option-button full-screen"></div>
+        <div id="points-container">
+            0
+        </div>
+        <div class="timer">
+            <label id="minutes">00</label>:<label id="seconds">00</label>
+        </div>
+    </div>
+
+    <div id="container"></div>
+    <div id="question-wrapper"></div>
+    <script src="./client.bundle?platform=vr"></script>
+    <script>
+        const r360 = React360.init(
+            `index.bundle?platform=vr&dev=true`,
+            document.getElementById("container"), {
+                assetRoot: "static_assets/",
+            }
+        );
+    </script>
+    <script src="initialize.js"></script>
+</body>
+
+</html>
